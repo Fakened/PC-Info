@@ -1,0 +1,2157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+*{
+	font: &quot;Rockwell&quot;;
+	border:none
+}
+
+QHeaderView::section {
+	background: rgb(195, 195, 201);
+	font: &quot;Rockwell&quot;;
+	border: 1px solid;
+	
+	border-color: rgb(156, 156, 161);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="header_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(208, 208, 214);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignLeft">
+        <widget class="QFrame" name="header_left_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="menu_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/2757271291543238854.svg</normaloff>:/icons/icons/2757271291543238854.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>12</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Menu</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="header_center_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="icons.qrc">:/icons/icons/10511101761543238864.svg</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>14</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>PC Info</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignRight|Qt::AlignTop">
+        <widget class="QFrame" name="header_left_frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="minimalize_btn">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(208, 208, 214);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/17474714781543238905.svg</normaloff>:/icons/icons/17474714781543238905.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="restor_btn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/12627537101543238871.svg</normaloff>:/icons/icons/12627537101543238871.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="close_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/icons/5299154331543238955.svg</normaloff>:/icons/icons/5299154331543238955.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>16</width>
+              <height>16</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="left_menu_frame">
+         <property name="minimumSize">
+          <size>
+           <width>32</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>39</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(208, 208, 214);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item alignment="Qt::AlignLeft|Qt::AlignTop">
+           <widget class="QFrame" name="menu_frame">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="cpu_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/15601232391543238881.svg</normaloff>:/icons/icons/15601232391543238881.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>CPU</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="battery_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/16964359561543238861.svg</normaloff>:/icons/icons/16964359561543238861.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Battery</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="system_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/10010006041543238906.svg</normaloff>:/icons/icons/10010006041543238906.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>System Information</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QPushButton" name="activities_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/2475893221543238851.svg</normaloff>:/icons/icons/2475893221543238851.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Activities</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QPushButton" name="storage_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/11931009711543238875.svg</normaloff>:/icons/icons/11931009711543238875.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Storage</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QPushButton" name="sensors_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/3850855891543238935.svg</normaloff>:/icons/icons/3850855891543238935.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Sensors</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QPushButton" name="networks_btn">
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/icons/wifi_icon.svg</normaloff>:/icons/icons/wifi_icon.svg</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>32</width>
+                 <height>32</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Networks</string>
+               </property>
+               <property name="margin">
+                <number>3</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="right_main_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(195, 195, 201);
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit{
+	border: 1px solid rgb(195, 195, 201);
+	border-bottom-color: rgb(182, 182, 188);
+	
+	background-color: rgb(208, 208, 214);
+}
+
+QLineEdit::edit-focus{
+	border: 1px solid rgb(195, 195, 201);
+	border-bottom-color: rgb(182, 182, 188);
+	
+	
+	background-color: rgb(156, 156, 161);
+}
+
+</string>
+            </property>
+            <property name="currentIndex">
+             <number>6</number>
+            </property>
+            <widget class="QWidget" name="cpu_page">
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignBottom">
+               <widget class="QLabel" name="label_52">
+                <property name="font">
+                 <font>
+                  <family>Rockwell</family>
+                  <pointsize>16</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>CPU Information</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignTop">
+               <widget class="QFrame" name="cpu_info_frame">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_41">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>CPU Core</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_42">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_17">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>CPU Count</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_40">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_38">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_39">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>CPU Usage</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignBottom">
+               <widget class="QLabel" name="label_53">
+                <property name="font">
+                 <font>
+                  <family>Rockwell</family>
+                  <pointsize>16</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>RAM Information</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignTop">
+               <widget class="QFrame" name="ram_info_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_28">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Used RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_29">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_30">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Total RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_31">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Avibile RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_32">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Free RAM</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_33">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>RAM Usage</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_34">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_35">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLabel" name="label_36">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLabel" name="label_37">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="baterry_page">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignBottom">
+               <widget class="QLabel" name="label_43">
+                <property name="font">
+                 <font>
+                  <family>Rockwell</family>
+                  <pointsize>16</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Battery Information</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignTop">
+               <widget class="QFrame" name="frame">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_47">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Plugged In</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_46">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Time Left</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_44">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Status</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_45">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Charge</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QLabel" name="label_48">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="label_49">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_50">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QLabel" name="label_51">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="system_page">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_7">
+                 <item row="4" column="2">
+                  <widget class="QLabel" name="label_63">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>System Time</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_59">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_56">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Platform</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="label_57">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Version</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QLabel" name="label_58">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>System Date</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QLabel" name="label_60">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QLabel" name="label_62">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Machine</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_54">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>16</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Sysytem Information</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QLabel" name="label_61">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="label_55">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>14</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QLabel" name="label_65">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="3">
+                  <widget class="QLabel" name="label_66">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QLabel" name="label_64">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Processor</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="3">
+                  <widget class="QLabel" name="label_67">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="activities_page">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item alignment="Qt::AlignTop">
+               <widget class="QFrame" name="frame_3">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>10</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_68">
+                   <property name="font">
+                    <font>
+                     <family>Rockwell</family>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Activities</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item alignment="Qt::AlignRight">
+                  <widget class="QFrame" name="frame_6">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>3</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="placeholderText">
+                       <string>Search Processes</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item alignment="Qt::AlignRight">
+                     <widget class="QPushButton" name="pushButton_2">
+                      <property name="text">
+                       <string/>
+                      </property>
+                      <property name="icon">
+                       <iconset resource="icons.qrc">
+                        <normaloff>:/icons/icons/search.svg</normaloff>:/icons/icons/search.svg</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>24</width>
+                        <height>24</height>
+                       </size>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QTableWidget" name="tableWidget">
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <property name="selectionMode">
+                    <enum>QAbstractItemView::SingleSelection</enum>
+                   </property>
+                   <property name="selectionBehavior">
+                    <enum>QAbstractItemView::SelectColumns</enum>
+                   </property>
+                   <property name="showGrid">
+                    <bool>true</bool>
+                   </property>
+                   <attribute name="horizontalHeaderVisible">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderCascadingSectionResizes">
+                    <bool>false</bool>
+                   </attribute>
+                   <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>190</number>
+                   </attribute>
+                   <column>
+                    <property name="text">
+                     <string>Process ID</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Process Name</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Process Status</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Started</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignBottom">
+               <widget class="QFrame" name="frame_5">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+	
+	font: 10pt &quot;Rockwell&quot;;
+	background-color: rgb(208, 208, 214);
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_3">
+                   <property name="text">
+                    <string>Suspend</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_4">
+                   <property name="text">
+                    <string>Resume</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_5">
+                   <property name="text">
+                    <string>Terminate</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_6">
+                   <property name="text">
+                    <string>Kill</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="storage_page">
+             <property name="styleSheet">
+              <string notr="true">
+*{
+	font: &quot;Rockwell&quot;;
+	border:none
+}</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_69">
+                <property name="font">
+                 <font>
+                  <family>Rockwell</family>
+                  <pointsize>16</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Disk Partition</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_2">
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>126</number>
+                </attribute>
+                <attribute name="horizontalHeaderHighlightSections">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="verticalHeaderCascadingSectionResizes">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>Device</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Mount Point</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Total Storage</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Used Storage</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Free Space</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="sensors_page">
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_70">
+                <property name="font">
+                 <font>
+                  <family>Rockwell</family>
+                  <pointsize>16</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Sensors</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="tableWidget_3">
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>152</number>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderStretchLastSection">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <column>
+                 <property name="text">
+                  <string>Nowa kolumna</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Label</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Current</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Critical</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="networks_page">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="scrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <widget class="QWidget" name="scrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>744</width>
+                   <height>606</height>
+                  </rect>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_12">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="QFrame" name="frame_7">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_13">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_71">
+                       <property name="text">
+                        <string>Stats</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_4">
+                       <attribute name="horizontalHeaderDefaultSectionSize">
+                        <number>145</number>
+                       </attribute>
+                       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                        <bool>false</bool>
+                       </attribute>
+                       <attribute name="horizontalHeaderStretchLastSection">
+                        <bool>true</bool>
+                       </attribute>
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ISUP</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>DUPLEX</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>SPEED</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>MTU</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_9">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <property name="bottomMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_73">
+                       <property name="text">
+                        <string>Network Addresses</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_6">
+                       <attribute name="horizontalHeaderDefaultSectionSize">
+                        <number>120</number>
+                       </attribute>
+                       <attribute name="horizontalHeaderStretchLastSection">
+                        <bool>true</bool>
+                       </attribute>
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>FAMILY</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ADDRESS</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>NETMASK</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>BROADCAST</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>PTP</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QFrame" name="frame_8">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_14">
+                     <property name="bottomMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_72">
+                       <property name="text">
+                        <string>Network I/O Counters</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="tableWidget_5">
+                       <column>
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>BYTES SENT</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>BYTES RECEIVED</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>PACKED SENT</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ERR In</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ERR Out</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Drop In</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Drop Out</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="footer_frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(208, 208, 214);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignRight">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="icons.qrc">
+           <normaloff>:/icons/icons/21286857451543238864.svg</normaloff>:/icons/icons/21286857451543238864.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="size_grip">
+         <property name="maximumSize">
+          <size>
+           <width>10</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

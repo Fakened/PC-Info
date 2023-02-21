@@ -49,6 +49,7 @@ class MainWindow(QMainWindow):
         self.ram()
         self.battery()
         self.systemInfo()
+        self.processes()
         self.show()
 
     def applyButtonStyle(self, button):
@@ -100,7 +101,6 @@ class MainWindow(QMainWindow):
 
     def ram(self):
         ram = psutil.virtual_memory()
-        print(ram)
         self.ui.ram_total.setText(str(round(int(ram.total) / (1024.0 **3), 2)) + "GB")
         self.ui.ram_avibile.setText(str(round(int(ram.available) / (1024.0 **3), 2)) + "GB")
         self.ui.ram_used.setText(str(round(int(ram.used) / (1024.0 **3), 2)) + "GB")
@@ -146,6 +146,75 @@ class MainWindow(QMainWindow):
         self.ui.system_date.setText(datetime.datetime.now().strftime("%I:%M:%S %p"))
         self.ui.system_processor.setText(platform.processor())
         self.ui.system_platform.setText(platform.platform())
+
+    def processes(self):
+        for process in psutil.pids():
+            rowPosition = self.ui.process_table.rowCount()
+            self.ui.process_table.insertRow(rowPosition)
+            try:
+                p = psutil.Process(process)
+                self.ui.process_table.setItem(rowPosition, 0, QTableWidgetItem(str(p.pid)))
+                self.ui.process_table.setItem(rowPosition, 1, QTableWidgetItem(p.name()))
+                self.ui.process_table.setItem(rowPosition, 2, QTableWidgetItem(str(p.cpu_percent())))
+                self.ui.process_table.setItem(rowPosition, 3, QTableWidgetItem(str(p.memory_percent())))
+                self.ui.process_table.setItem(rowPosition, 4, QTableWidgetItem(str(p.status())))
+                self.ui.process_table.setItem(rowPosition, 5, QTableWidgetItem(str(p.username())))
+                self.ui.process_table.setItem(rowPosition, 6, QTableWidgetItem(str(datetime.datetime.fromtimestamp(p.create_time()).strftime("%Y-%m-%d %H:%M:%S"))))
+            
+            except:
+                pass
+        self.ui.suspend_btn.clicked.connect(lambda: self.suspend())
+        self.ui.resume_btn.clicked.connect(lambda: self.resume())
+        self.ui.terminate_btn.clicked.connect(lambda: self.terminate())
+        self.ui.kill_btn.clicked.connect(lambda: self.kill())
+        self.ui.search_process_btn.clicked.connect(lambda: self.findName())
+
+    def findName(self):
+        name = self.ui.search_process.text().lower()
+        for row in range(self.ui.process_table.rowCount()):
+            item = self.ui.process_table.item(row, 1)
+            self.ui.process_table.setRowHidden(row, name not in item.text().lower())
+        self.ui.search_process.setText("")
+
+    def suspend(self):
+        try:
+            pid = int(self.ui.process_table.selectedItems()[0].text())
+            row = self.ui.process_table.selectedIndexes()[0].row()
+            p = psutil.Process(pid)
+            p.suspend()
+            self.ui.process_table.setItem(row, 4, QTableWidgetItem(str(p.status())))
+        except Exception as e:
+            print(e)
+
+    def resume(self):
+        try:
+            pid = int(self.ui.process_table.selectedItems()[0].text())
+            row = self.ui.process_table.selectedIndexes()[0].row()
+            p = psutil.Process(pid)
+            p.resume()
+            self.ui.process_table.setItem(row, 4, QTableWidgetItem(str(p.status())))
+        except Exception as e:
+            print(e)
+
+    def terminate(self):
+        try:
+            pid = int(self.ui.process_table.selectedItems()[0].text())
+            row = self.ui.process_table.selectedIndexes()[0].row()
+            p = psutil.Process(pid)
+            p.terminate()
+            self.ui.process_table.removeRow(row)
+        except Exception as e:
+            print(e)   
+
+    def kill(self):
+        try:
+            pid = int(self.ui.process_table.selectedItems()[0].text())
+            row = self.ui.process_table.selectedIndexes()[0].row()
+            p = psutil.Process(pid)
+            p.kill()
+            self.ui.process_table.removeRow(row)
+        except Exception as e:
+            print(e)   
 
 # Run the program
 if __name__ == "__main__":

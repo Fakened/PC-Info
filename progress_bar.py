@@ -48,3 +48,8 @@ class CircualProgressBar(QWidget):
         paint.setPen(pen)
         paint.drawText(rect, Qt.AlignCenter, str(self.value) + self.suffix)
         paint.end()
+
+    def setValue(self, value):
+        self.value = value
+        self.update()
+    

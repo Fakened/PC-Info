@@ -630,7 +630,7 @@ QLineEdit::edit-focus{
 </string>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>5</number>
             </property>
             <widget class="QWidget" name="cpu_page">
              <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0">
@@ -732,7 +732,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="3" column="1">
-                     <widget class="QLabel" name="label_40">
+                     <widget class="QLabel" name="cpu_usage">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -746,7 +746,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="2" column="1">
-                     <widget class="QLabel" name="label_42">
+                     <widget class="QLabel" name="cpu_core">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -788,7 +788,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLabel" name="label_38">
+                     <widget class="QLabel" name="cpu_count">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -805,7 +805,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="cpu_usage">
+                  <widget class="QFrame" name="frame_11">
                    <property name="minimumSize">
                     <size>
                      <width>300</width>
@@ -813,6 +813,21 @@ QLineEdit::edit-focus{
                     </size>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_17">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
                     <item>
                      <layout class="QVBoxLayout" name="cpu_usage_layout">
                       <property name="spacing">
@@ -895,7 +910,7 @@ QLineEdit::edit-focus{
                      <number>0</number>
                     </property>
                     <item row="1" column="1">
-                     <widget class="QLabel" name="label_34">
+                     <widget class="QLabel" name="ram_avibile">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -909,7 +924,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="4" column="1">
-                     <widget class="QLabel" name="label_35">
+                     <widget class="QLabel" name="ram_used">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -923,7 +938,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="5" column="1">
-                     <widget class="QLabel" name="label_36">
+                     <widget class="QLabel" name="ram_free">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -937,7 +952,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="6" column="1">
-                     <widget class="QLabel" name="label_37">
+                     <widget class="QLabel" name="ram_usage">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -979,7 +994,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item row="0" column="1">
-                     <widget class="QLabel" name="label_29">
+                     <widget class="QLabel" name="ram_total">
                       <property name="font">
                        <font>
                         <pointsize>12</pointsize>
@@ -1038,7 +1053,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="ram_usage">
+                  <widget class="QFrame" name="ram_usage_frame">
                    <property name="minimumSize">
                     <size>
                      <width>300</width>
@@ -1051,6 +1066,26 @@ QLineEdit::edit-focus{
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <layout class="QVBoxLayout" name="ram_usage_layout"/>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
@@ -1116,34 +1151,6 @@ QLineEdit::edit-focus{
                  <property name="spacing">
                   <number>0</number>
                  </property>
-                 <item row="3" column="0">
-                  <widget class="QLabel" name="label_47">
-                   <property name="font">
-                    <font>
-                     <pointsize>12</pointsize>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Plugged In</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <widget class="QLabel" name="label_46">
-                   <property name="font">
-                    <font>
-                     <pointsize>12</pointsize>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>Time Left</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="0" column="0">
                   <widget class="QLabel" name="label_44">
                    <property name="font">
@@ -1173,35 +1180,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QLabel" name="label_48">
-                   <property name="font">
-                    <font>
-                     <pointsize>12</pointsize>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>N/A</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="QLabel" name="label_49">
-                   <property name="font">
-                    <font>
-                     <pointsize>12</pointsize>
-                     <italic>false</italic>
-                     <bold>false</bold>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>N/A</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="1">
-                  <widget class="QLabel" name="label_50">
+                  <widget class="QLabel" name="battery_status">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1215,7 +1194,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="3" column="1">
-                  <widget class="QLabel" name="label_51">
+                  <widget class="QLabel" name="battery_plugged">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1226,6 +1205,114 @@ QLineEdit::edit-focus{
                    <property name="text">
                     <string>N/A</string>
                    </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="label_46">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Time Left</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QLabel" name="battery_charge">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="label_47">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Plugged In</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="battery_time">
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <italic>false</italic>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>N/A</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2" rowspan="4">
+                  <widget class="QFrame" name="frame_13">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LeftToRight</enum>
+                   </property>
+                   <property name="autoFillBackground">
+                    <bool>false</bool>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_16">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <layout class="QVBoxLayout" name="battery_charge_percentage">
+                      <property name="sizeConstraint">
+                       <enum>QLayout::SetMaximumSize</enum>
+                      </property>
+                     </layout>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
@@ -1274,7 +1361,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="2" column="1">
-                  <widget class="QLabel" name="label_59">
+                  <widget class="QLabel" name="system_platform">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1330,7 +1417,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="4" column="1">
-                  <widget class="QLabel" name="label_60">
+                  <widget class="QLabel" name="system_version">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1372,7 +1459,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="5" column="1">
-                  <widget class="QLabel" name="label_61">
+                  <widget class="QLabel" name="system_date">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1386,7 +1473,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="QLabel" name="label_55">
+                  <widget class="QLabel" name="system_name">
                    <property name="font">
                     <font>
                      <pointsize>14</pointsize>
@@ -1400,7 +1487,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="2" column="3">
-                  <widget class="QLabel" name="label_65">
+                  <widget class="QLabel" name="system_machine">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1414,7 +1501,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="4" column="3">
-                  <widget class="QLabel" name="label_66">
+                  <widget class="QLabel" name="system_time">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1442,7 +1529,7 @@ QLineEdit::edit-focus{
                   </widget>
                  </item>
                  <item row="5" column="3">
-                  <widget class="QLabel" name="label_67">
+                  <widget class="QLabel" name="system_processor">
                    <property name="font">
                     <font>
                      <pointsize>12</pointsize>
@@ -1546,7 +1633,7 @@ QLineEdit::edit-focus{
                      <number>5</number>
                     </property>
                     <item>
-                     <widget class="QLineEdit" name="lineEdit">
+                     <widget class="QLineEdit" name="search_process">
                       <property name="minimumSize">
                        <size>
                         <width>200</width>
@@ -1562,7 +1649,7 @@ QLineEdit::edit-focus{
                      </widget>
                     </item>
                     <item alignment="Qt::AlignRight">
-                     <widget class="QPushButton" name="pushButton_2">
+                     <widget class="QPushButton" name="search_process_btn">
                       <property name="text">
                        <string/>
                       </property>
@@ -1615,7 +1702,7 @@ QLineEdit::edit-focus{
                   <number>0</number>
                  </property>
                  <item>
-                  <widget class="QTableWidget" name="tableWidget">
+                  <widget class="QTableWidget" name="process_table">
                    <property name="editTriggers">
                     <set>QAbstractItemView::NoEditTriggers</set>
                    </property>
@@ -1623,9 +1710,12 @@ QLineEdit::edit-focus{
                     <enum>QAbstractItemView::SingleSelection</enum>
                    </property>
                    <property name="selectionBehavior">
-                    <enum>QAbstractItemView::SelectColumns</enum>
+                    <enum>QAbstractItemView::SelectRows</enum>
                    </property>
                    <property name="showGrid">
+                    <bool>true</bool>
+                   </property>
+                   <property name="sortingEnabled">
                     <bool>true</bool>
                    </property>
                    <attribute name="horizontalHeaderVisible">
@@ -1649,7 +1739,22 @@ QLineEdit::edit-focus{
                    </column>
                    <column>
                     <property name="text">
+                     <string>CPU Percentage</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>RAM Percentage</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
                      <string>Process Status</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>User Name</string>
                     </property>
                    </column>
                    <column>
@@ -1679,28 +1784,28 @@ QLineEdit::edit-focus{
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_9">
                  <item>
-                  <widget class="QPushButton" name="pushButton_3">
+                  <widget class="QPushButton" name="suspend_btn">
                    <property name="text">
                     <string>Suspend</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_4">
+                  <widget class="QPushButton" name="resume_btn">
                    <property name="text">
                     <string>Resume</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_5">
+                  <widget class="QPushButton" name="terminate_btn">
                    <property name="text">
                     <string>Terminate</string>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QPushButton" name="pushButton_6">
+                  <widget class="QPushButton" name="kill_btn">
                    <property name="text">
                     <string>Kill</string>
                    </property>
@@ -1750,7 +1855,16 @@ QLineEdit::edit-focus{
                </widget>
               </item>
               <item>
-               <widget class="QTableWidget" name="tableWidget_2">
+               <widget class="QTableWidget" name="storage_table">
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::NoSelection</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
                 <attribute name="horizontalHeaderDefaultSectionSize">
                  <number>126</number>
                 </attribute>
@@ -1781,6 +1895,16 @@ QLineEdit::edit-focus{
                 </column>
                 <column>
                  <property name="text">
+                  <string>File System</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Usage percentage</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
                   <string>Total Storage</string>
                  </property>
                 </column>
@@ -1792,11 +1916,6 @@ QLineEdit::edit-focus{
                 <column>
                  <property name="text">
                   <string>Free Space</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string/>
                  </property>
                 </column>
                </widget>
@@ -1835,7 +1954,7 @@ QLineEdit::edit-focus{
                </widget>
               </item>
               <item>
-               <widget class="QTableWidget" name="tableWidget_3">
+               <widget class="QTableWidget" name="sensor_table">
                 <attribute name="horizontalHeaderDefaultSectionSize">
                  <number>152</number>
                 </attribute>
@@ -1850,7 +1969,7 @@ QLineEdit::edit-focus{
                 </attribute>
                 <column>
                  <property name="text">
-                  <string>Nowa kolumna</string>
+                  <string/>
                  </property>
                 </column>
                 <column>
@@ -1873,6 +1992,13 @@ QLineEdit::edit-focus{
                   <string/>
                  </property>
                 </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="sensor_label">
+                <property name="text">
+                 <string/>
+                </property>
                </widget>
               </item>
              </layout>
@@ -1904,8 +2030,8 @@ QLineEdit::edit-focus{
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>744</width>
-                   <height>606</height>
+                   <width>117</width>
+                   <height>908</height>
                   </rect>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -1933,8 +2059,17 @@ QLineEdit::edit-focus{
                      <property name="spacing">
                       <number>0</number>
                      </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
                      <property name="bottomMargin">
-                      <number>100</number>
+                      <number>10</number>
                      </property>
                      <item>
                       <widget class="QLabel" name="label_71">
@@ -1944,12 +2079,27 @@ QLineEdit::edit-focus{
                       </widget>
                      </item>
                      <item>
-                      <widget class="QTableWidget" name="tableWidget_4">
+                      <widget class="QTableWidget" name="networtkStatsTable">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="editTriggers">
+                        <set>QAbstractItemView::NoEditTriggers</set>
+                       </property>
+                       <property name="sortingEnabled">
+                        <bool>true</bool>
+                       </property>
+                       <attribute name="horizontalHeaderCascadingSectionResizes">
+                        <bool>true</bool>
+                       </attribute>
                        <attribute name="horizontalHeaderDefaultSectionSize">
                         <number>145</number>
                        </attribute>
                        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </attribute>
                        <attribute name="horizontalHeaderStretchLastSection">
                         <bool>true</bool>
@@ -1993,8 +2143,17 @@ QLineEdit::edit-focus{
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
                      <property name="bottomMargin">
-                      <number>100</number>
+                      <number>10</number>
                      </property>
                      <item>
                       <widget class="QLabel" name="label_73">
@@ -2004,7 +2163,22 @@ QLineEdit::edit-focus{
                       </widget>
                      </item>
                      <item>
-                      <widget class="QTableWidget" name="tableWidget_6">
+                      <widget class="QTableWidget" name="networkAddressesTable">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="editTriggers">
+                        <set>QAbstractItemView::NoEditTriggers</set>
+                       </property>
+                       <property name="sortingEnabled">
+                        <bool>true</bool>
+                       </property>
+                       <attribute name="horizontalHeaderCascadingSectionResizes">
+                        <bool>true</bool>
+                       </attribute>
                        <attribute name="horizontalHeaderDefaultSectionSize">
                         <number>120</number>
                        </attribute>
@@ -2047,6 +2221,91 @@ QLineEdit::edit-focus{
                    </widget>
                   </item>
                   <item>
+                   <widget class="QFrame" name="frame_14">
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_18">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>10</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_11">
+                       <property name="text">
+                        <string>Network Connections</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QTableWidget" name="networkConnectionsTable">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="editTriggers">
+                        <set>QAbstractItemView::NoEditTriggers</set>
+                       </property>
+                       <property name="sortingEnabled">
+                        <bool>true</bool>
+                       </property>
+                       <attribute name="horizontalHeaderCascadingSectionResizes">
+                        <bool>false</bool>
+                       </attribute>
+                       <column>
+                        <property name="text">
+                         <string>FD</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>FAMILY</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>TYPE</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>LADDR</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>RADDR</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>STATUS</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>PID</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
                    <widget class="QFrame" name="frame_8">
                     <property name="frameShape">
                      <enum>QFrame::StyledPanel</enum>
@@ -2055,8 +2314,17 @@ QLineEdit::edit-focus{
                      <enum>QFrame::Raised</enum>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout_14">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
                      <property name="bottomMargin">
-                      <number>100</number>
+                      <number>10</number>
                      </property>
                      <item>
                       <widget class="QLabel" name="label_72">
@@ -2066,7 +2334,22 @@ QLineEdit::edit-focus{
                       </widget>
                      </item>
                      <item>
-                      <widget class="QTableWidget" name="tableWidget_5">
+                      <widget class="QTableWidget" name="networkIOTable">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="editTriggers">
+                        <set>QAbstractItemView::NoEditTriggers</set>
+                       </property>
+                       <property name="sortingEnabled">
+                        <bool>true</bool>
+                       </property>
+                       <attribute name="horizontalHeaderCascadingSectionResizes">
+                        <bool>true</bool>
+                       </attribute>
                        <column>
                         <property name="text">
                          <string/>
@@ -2085,6 +2368,11 @@ QLineEdit::edit-focus{
                        <column>
                         <property name="text">
                          <string>PACKED SENT</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>PACKED RECIVED</string>
                         </property>
                        </column>
                        <column>
@@ -2207,6 +2495,7 @@ QLineEdit::edit-focus{
  </widget>
  <resources>
   <include location="icons.qrc"/>
+  <include location="C:/Users/User/.designer/backup/icons.qrc"/>
  </resources>
  <connections/>
 </ui>
